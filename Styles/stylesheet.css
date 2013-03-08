@@ -1,0 +1,45 @@
+/*Stylesheet*/
+
+body {
+  font-family: helvetica;
+  text-align: left;
+}
+
+ul
+{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  float: right;
+}
+li
+{
+  float:left;
+}
+a
+{
+  display:block;
+  width:60px;
+}
+
+p {
+  text-align: left;
+  color: #626262;
+}
+
+#header {
+  text-align: left;
+}
+
+.nav {
+  margin: 0 auto;
+  text-align: right;
+}
+
+#feature {
+  height: 250px;
+}
+
+#article {
+}
