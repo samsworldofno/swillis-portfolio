@@ -1,35 +1,121 @@
-<html>
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product"> <!--<![endif]-->
 <head>
-  <title>thesamwillis</title>
-  <link href="styles/stylesheet.css" rel="stylesheet" type-"text/css" />
-  <link href="styles/960.css" rel="stylesheet" type-"text/css" />
+    <meta charset="utf-8">
+
+    <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Sam Willis</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="humans.txt">
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Facebook Metadata /-->
+    <meta property="fb:page_id" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content=""/>
+    <meta property="og:title" content=""/>
+
+    <!-- Google+ Metadata /-->
+    <meta itemprop="name" content="">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <!-- We highly recommend you use SASS and write your custom styles in sass/_custom.scss.
+       However, there is a blank style.css in the css directory should you prefer -->
+    <link rel="stylesheet" href="css/gumby.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+    <script src="js/libs/modernizr-2.6.2.min.js"></script>
 </head>
-  <body>
-    <div id='container' class='container_12 clearfix'>
-      <div id="header" class='grid_12'>
-        <div id="logo" class='grid_6 alpha'>
-          <h1>Sam Willis</h1>
-        </div>
-<!--         <div id='nav' class='grid_6 omega'> -->
-          <div class='nav grid_2'>Work.</div>
-          <div class='nav grid_2'>Bio.</div>
-          <div class='nav grid_2 omega'>Contact.</div>
-        </div>
-      <div id='feature' class='grid_12'>
-        <p>Mumblecore tousled butcher artisan keytar. Cardigan chambray hella, sustainable trust fund chillwave ethnic letterpress readymade messenger bag master cleanse aesthetic wayfarers scenester. Mustache pug put a bird on it lomo, narwhal fixie retro single-origin coffee biodiesel flexitarian.</p>
-      </div>
-      <div class='article grid_4 alpha'>
-        <h2>Work.</h2>
-        <p>Mumblecore tousled butcher artisan keytar. Cardigan chambray hella, sustainable trust fund chillwave ethnic letterpress readymade messenger bag master cleanse aesthetic wayfarers scenester.</p>
-      </div>
-      <div class='article grid_4'>
-        <h2>Bio.</h2>
-        <p>Mumblecore tousled butcher artisan keytar. Cardigan chambray hella, sustainable trust fund chillwave ethnic letterpress readymade messenger bag master cleanse aesthetic wayfarers scenester.</p>
-      </div>
-      <div class='article grid_4 omega'>
-        <h2>Contact.</h2>
-        <p>Mumblecore tousled butcher artisan keytar. Cardigan chambray hella, sustainable trust fund chillwave ethnic letterpress readymade messenger bag master cleanse aesthetic wayfarers scenester.</p>
-      </div>
+
+<body>
+<nav id='navigation' class='navbar'>
+  <div id='header' class='row'>
+  <div id='logo' class='four columns'>
+    <h1>Sam Willis</h1>
+  </div>
+  <div id='nav' class='five columns push_three'>
+    <div class='medium oval btn default'>
+      <a href='#'>Work.</a>
     </div>
+    <div class='medium oval btn default'>
+      <a href='#'>Bio.</a>
+    </div>
+    <div class='medium oval btn default'>
+      <a href='#'>Contact.</a>
+    </div>
+  </div>
+  </div>
+</nav>
+
+  <div class='container'>
+    <div id='feature' class='row'>
+      <h2>I love communicating with people.</h2>
+      <p>And I'm a lucky old chap because of the choice of mediums that allow me to do this. I like to communicate ideas through designing and writing, telling stories over a coffee and jokes over a beer.</p>
+      <p>Check out some of my work.</p>
+    </div>
+    <div id='articles' class='row'>
+      <div id='designButton' class='four columns'>Designs.</div>
+      <div id='writingButton' class='four columns'>Writing.</div>
+      <div id='projectsButton' class='four columns'>Projects.</div>
+    </div>
+    <div id='work' class='row'>Loads of work.</div>
+    <div id='bio' class='row'>All about me.</div>
+    <div id='contact' class='row'>Contact me?</div>
+    <div id='footer' class='row'>Footer</div>
+  </div> <!--! end of #container -->
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.8.3.min.js"><\/script>')</script>
+
+  <!--
+  Include gumby.js followed by UI modules.
+  Or concatenate and minify into a single file
+  <script src="js/libs/gumby.js"></script>
+  <script src="js/libs/ui/gumby.retina.js"></script>
+  <script src="js/libs/ui/gumby.fixed.js"></script>
+  <script src="js/libs/ui/gumby.skiplink.js"></script>
+  <script src="js/libs/ui/gumby.toggleswitch.js"></script>
+  <script src="js/libs/ui/gumby.checkbox.js"></script>
+  <script src="js/libs/ui/gumby.radiobtn.js"></script>
+  <script src="js/libs/ui/gumby.tabs.js"></script>
+  <script src="js/libs/ui/jquery.validation.js"></script>
+  -->
+  <script src="js/libs/gumby.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Change UA-XXXXX-X to be your site's ID -->
+  <script>
+    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+
   </body>
 </html>
