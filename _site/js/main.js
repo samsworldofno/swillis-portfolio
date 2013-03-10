@@ -17,12 +17,3 @@ Gumby.oldie(function() {
 $(function() {
 
 });
-
-$(function()
-      {
-        $('.slide') .css({'height': (($(window).height()) )});
-    
-        $(window).bind('resize', function(){
-            $('.slide') .css({'height': (($(window).height()) )});
-        });
-      });
