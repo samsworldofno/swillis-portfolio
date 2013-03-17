@@ -25,4 +25,15 @@ $(function()
         $(window).bind('resize', function(){
             $('.slide') .css({'height': (($(window).height()) )});
         });
-      });
+
+        $(window).scroll(function() {    
+            var scroll = $(window).scrollTop();
+            if (scroll >= 500) {
+                $(".clearHeader").addClass("darkHeader");
+            }
+            else {
+                $(".clearHeader").removeClass("darkHeader");
+            }
+        });
+
+});

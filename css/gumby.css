@@ -1811,7 +1811,7 @@ body .video { width: 100%; position: relative; height: 0; padding-bottom: 56.25%
 
 .video > video, .video > iframe, .video > object, .video > embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
-.navbar { background-color: white; border-bottom: 1px solid whitesmoke; position: fixed; z-index: 9999; }
+.navbar { background-color: white; border-bottom: 1px solid whitesmoke; position: fixed; z-index: 9999; font-family: ModernPictogramsNormal; }
 .navbar #header h1 { font-family: arvo; font-size: 3.25rem; }
 .navbar #header #nav { text-align: right; margin-top: 25px; }
 

@@ -1811,12 +1811,16 @@ body .video { width: 100%; position: relative; height: 0; padding-bottom: 56.25%
 
 .video > video, .video > iframe, .video > object, .video > embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
-.navbar { background-color: white; border-bottom: 1px solid whitesmoke; position: fixed; z-index: 9999; }
+.navbar { background-color: white; border-bottom: 1px solid whitesmoke; position: fixed; z-index: 9999; font-family: ModernPictogramsNormal; }
 .navbar #header h1 { font-family: arvo; font-size: 3.25rem; }
 .navbar #header #nav { text-align: right; margin-top: 25px; }
-
-.navShadow { border-bottom-color: rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); top: 0 !important; position: fixed !important; }
 
 #feature { z-index: 1; padding-top: 90px; }
 
 #articles { text-align: center; }
+
+.nivoSlider { position: relative; background: url(images/loading.gif) no-repeat 50% 50%; }
+
+.nivoSlider img { position: absolute; top: 0px; left: 0px; display: none; }
+
+.nivoSlider a { border: 0; display: block; }
