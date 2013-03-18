@@ -84,7 +84,7 @@
 			&:hover .dropdown {
 				min-height: 60px;
 				max-height: $tablet-device-width - 207;
-        border-top: 1px solid whitesmoke;
+        border-top: 1px solid #f0f0f0;
 				overflow: visible;
 				height: auto;
 				width: 100%;
@@ -156,7 +156,7 @@
 			display: block;
 			padding: 0 20px;
 			color: $body-link-color;
-			border-bottom: 1px solid whitesmoke;
+			border-bottom: 1px solid #f0f0f0;
 			text-shadow: none;
 			@include line-and-height(height-calc($large - 3));
 		}
@@ -226,16 +226,22 @@
   		position: absolute;
   		text-align: center;
   		display: inline-block;
-  		color: $navbar-link-color;
-  		background: $navbar-color;
+  		color: #f0f0f0;
+  		/*background: $navbar-color;*/
   		@include line-and-height(40px);
   		@include border-radius($button-radius);
   		@include font-size($larger);
+      -webkit-transition: .2s ease-out;
+      -moz-transition: .2s ease-out;
+      -ms-transition: .2s ease-out;
+      -o-transition: .2s ease-out;
+      transition: .2s ease-out;
   		&:hover {
-  			background: lighten($navbar-color, 5%);
+  			color: #EB540A;
   		}
   		&:active, &.active {
-  			background: darken($navbar-color, 5%);
+  			background: #f0f0f0;
+        color: white;
   		}
   	}
   	&.pretty a.toggle {
@@ -263,16 +269,16 @@
   		width: 100% !important;
   		height: 0;
   		max-height: 0;
-  		top: 60px;
+  		/*top: 60px;*/
   		overflow: hidden;
   		text-align: center;
-  		background: darken($navbar-color, 5%);
+  		background: white;
   		&.active {
   			height: auto;
   			max-height: 600px;
   			z-index: 999999;
   			@include transition-duration(.5s);
-  			@include box-shadow(0 2px 2px darken($navbar-color, 15%));
+  			@include box-shadow(0px 3px 4px rgba(0,0,0,.3));
   		}
   		li {
 		  	display: block;
@@ -292,12 +298,12 @@
 					@include box-shadow(none !important);
 		  	}
 		  	&:hover .dropdown {
-		  		border-bottom: 1px solid darken($navbar-color, 10%);
+		  		border-bottom: 1px solid #f0f0f0;
 		  	}
 		  	&:hover .dropdown ul {
 		  		position: relative;
 		  		top: 0;
-		  		background: darken($navbar-color, 8%);
+		  		background: white;
 		  		min-height: 60px;
 		  		max-height: 250px;
 		  		height: auto;
@@ -306,10 +312,11 @@
 		  		@include transition-duration(.5s);
 		  		li {
 		  			min-height: 50px;
-		  			border-bottom: darken($navbar-color, 5%);
+		  			border-bottom: #f0f0f0;
 		  			a {
-		  				color: $white;
-		  				border-bottom: 1px solid darken($navbar-color, 10%);
+              text-align: center;
+		  				color: #EB540A;
+		  				border-bottom: 1px solid #f0f0f0;
 		  				&:hover {color: $body-link-color;}
 						}
 		  		}

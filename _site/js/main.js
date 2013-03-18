@@ -20,19 +20,19 @@ $(function() {
 
 $(function()
       {
-        $('.slide') .css({'height': (($(window).height()) )});
+        // $('.slide') .css({'height': (($(window).height()) )});
     
-        $(window).bind('resize', function(){
-            $('.slide') .css({'height': (($(window).height()) )});
-        });
+        // $(window).bind('resize', function(){
+        //     $('.slide') .css({'height': (($(window).height()) )});
+        // });
 
         $(window).scroll(function() {    
             var scroll = $(window).scrollTop();
-            if (scroll >= 500) {
-                $(".clearHeader").addClass("darkHeader");
+            if (scroll >= 40) {
+                $(".navbar").addClass("navbarShadow");
             }
             else {
-                $(".clearHeader").removeClass("darkHeader");
+                $(".navbar").removeClass("navbarShadow");
             }
         });
 

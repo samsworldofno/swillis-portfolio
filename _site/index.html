@@ -49,53 +49,64 @@
     <script src="js/libs/modernizr-2.6.2.min.js"></script>
     <script type="text/javascript">
       function goToByScroll(id){
-      $('html, body').animate({scrollTop: $("."+id).offset().top - 88},'slow');
+      $('html, body').animate({scrollTop: $("."+id).offset().top - 60},'slow');
       }
     </script>
 </head>
 
 <body>
-<nav id='navigation' class='navbar'>
+<nav class='navbar'>
   <div id='header' class='row'>
   <div id='logo' class='four columns'>
     <h1>Sam Willis</h1>
   </div>
-  <div id='nav' class='five columns push_three'>
-    <div class='medium oval btn default'>
-      <a href='#' onClick="goToByScroll('work')">Work</a>
+  <div id='nav' class='three columns push_five'>
+    <ul>
+    <li class='workIcon'>
+      <a href='#' onClick="goToByScroll('work')">
+        <i class="icon-docs"></i>
+      </a>
+      <div class='dropdown'>
+      <ul>
+        <li><a href="#" onClick="goToByScroll('second')">Designs</a></li>
+        <li><a href="#" onClick="goToByScroll('third')">Writing</a></li>
+        <li><a href="#" onClick="goToByScroll('fourth')">Projects</a></li>
+      </ul>
     </div>
-    <div class='medium oval btn default'>
-      <a href='#' onClick="goToByScroll('bio')">Bio</a>
-    </div>
-    <div class='medium oval btn default'>
-      <a href='#' onClick="goToByScroll('contact')">Contact</a>
-    </div>
+    </li>
+    <li class='bioIcon'>
+      <a href='#' onClick="goToByScroll('bio')"><i class="icon-vcard"></i></a>
+    </li>
+    <li class='contactIcon'>
+      <a href='#' onClick="goToByScroll('contact')"><i class="icon-paper-plane"></i></a>
+    </li>
+  </ul>
   </div>
   </div>
 </nav>
 
-  <div class='container'>
+  <div class='home container'>
     <div class='first slide'>
       <div id='feature' class='row'>
-        <h2>Communication.</h2>
-        <p>"A process by which information is exchanged between individuals through a common system of symbols, signs, or behavior" (Merriam-Webster).</p>
-        <p>I love communicating with people. I like doing this through any medium I can find. Designing, writing, telling tories over coffee, telling jokes over a beer, all allow us to share experiences and ideas with each other. And that's what it's all about.</p>
-        <p>Check out some of my work.</p>
+        <h2>I am a writer, a designer and a (padawan) hacker.</h2>
+        <p>I love communicating with people. I get to do this in many ways, from designing pretty things and writing great content, to telling stories over coffee and jokes over a beer. For me life is about sharing experiences and ideas with others, and I want my work to embody this.</p>
+        <h4>See what I'm working on.</h4>
       </div>
       <div id='articles' class='row'>
-        <div id='designButton' class='four columns'>
-          <div class='medium oval btn default' onClick="goToByScroll('second')">Designs.</div>
+        <div class='four columns' onClick="goToByScroll('second')">
+          <div class='design circle'><div class='circleInner'><i class="icon-brush"></i></div></div>
         </div>
-        <div id='writingButton' class='four columns'>
-          <div class='medium oval btn default' onClick="goToByScroll('third')">Writing.</div>
+        <div class='four columns' onClick="goToByScroll('third')">
+          <div class='writing circle'><i class="icon-pencil"></i></div>
         </div>
-        <div id='projectsButton' class='four columns'>
-          <div class='medium oval btn default' onClick="goToByScroll('fourth')">Projects.</div>
+        <div class='four columns' onClick="goToByScroll('fourth')">
+          <div class='projects circle'><i class="icon-tools"></i></div>
         </div>
       </div>
     </div>
-    <div id='work' class='row work'>
-      <div id='designs' class='second slide'>
+  </div>
+    <div class='container shaded'>
+      <div id='designs' class='row work second'>
         <h3>Some things I have designed.</h3>
         <div class="slider-wrapper theme-default">
           <div id="slider" class="nivoSlider">
@@ -108,11 +119,13 @@
         <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
         </div>
       </div>
-      <div id='writing' class='third slide'>
+    </div>
+      <div id='writing' class='row third slide'>
         <h3>Some things I have Written.</h3>
-        <p>Here are a few links to blog posts I have written. I have been a community manager for tech start-up Evently for a few months now, and have enjoyed writing about how understanding audience data can help the events industry.</p>
+        <p>Here are a few blog posts I have written. I have been a community manager for tech start-up Evently for a few months now, and have enjoyed writing about how understanding audience data can help the events industry.</p>
       </div>
-      <div id='projects' class='fourth slide'>
+    <div class='container shaded'>
+      <div id='projects' class='row fourth slide'>
         <h3>A few other projects I am working on.</h3>
         <h4>Brew Raffle</h4>
         <p>Visit Raffle.io if you need to solve tea-making problems. Brew Raffle helps you to deiced who makes the next round of tea. Enter the names of those wnating a tea, and Brew Raffle will amicably decide the brewer.</p>
@@ -123,28 +136,36 @@
         <p>This project is less secret, more in it's early stages and not ready for unveiling. I will post more on here once there is more to show.</p>
       </div>
     </div>
-    <div id='bio' class='row bio'>
+    <div class='row bio'>
       <div class='fifth slide'>
-        <h3>All about me.</h3>
-        <p>I try to be a lot of things. As a result, I have dabbled in lots of different fields. As I said before, I love communicating and interacting with people, and being able to do this with my work is what I strive for.</p>
-        <p>Things I want to be (when I grow up):</p>
-        <ul>
-          <li>Designer</li>
-          <li>Writer</li>
-          <li>Developer</li>
-          <li>Astronought</li>
-        </ul>
-        <p>Blah</p>
+        <h3>About me.</h3>
+        <div class='circle image four columns bioPic push_four'><img src="img/me-and-jesper.png"></div>
+        <div class='bioCopy twelve columns'
+        <p>I am a 23 year old Community Manager with a degree in Business. 12 months ago I have unearthed a passion for web design, and have been furiously learning and hacking away at projects ever since.</p>
+        <p>I won't write a lot more here, as you probably won't read it. But, if you want to know more about me, visit some of the pages below. Or just pick up the phone.</p>
+        <p>I am always looking for new projects, so if you think I can help you, don't hesitate to get in touch.</p>
       </div>
     </div>
+  </div>
+    <div class='container shaded'>
     <div id='contact' class='row contact'>
       <div class='sixth slide'>
         <h3>Contact me?</h3>
-        <p>Wagwan.</p>
+        <p>You can get hold of me via all of the usual channels, so holler if you need anything written, designed or hacked.</p>
+        <p>If you just want a coffee or beer, then that's OK too.</p>
       </div>
     </div>
+  </div>
     <div id='footer' class='row'>
       <h3>Footer</h3>
+      <ul class=''>
+        <li>Twitter</li>
+        <li>Facebook</li>
+        <li>LinkedIn</li>
+        <li>Dribbble</li>
+        <li>Github</li>
+        <li>Whatever else</li>
+      </ul>
     </div>
   </div> <!--! end of #container -->
 

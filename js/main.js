@@ -20,11 +20,11 @@ $(function() {
 
 $(function()
       {
-        $('.slide') .css({'height': (($(window).height()) )});
+        // $('.slide') .css({'height': (($(window).height()) )});
     
-        $(window).bind('resize', function(){
-            $('.slide') .css({'height': (($(window).height()) )});
-        });
+        // $(window).bind('resize', function(){
+        //     $('.slide') .css({'height': (($(window).height()) )});
+        // });
 
         $(window).scroll(function() {    
             var scroll = $(window).scrollTop();
@@ -35,5 +35,4 @@ $(function()
                 $(".navbar").removeClass("navbarShadow");
             }
         });
-
 });
