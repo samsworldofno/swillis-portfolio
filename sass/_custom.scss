@@ -1,7 +1,9 @@
 // Your custom SCSS should be written here...
+
 .slide {
-  height: 800px;
+  overflow: auto;
 }
+
 .navbar {
   background-color: white;
   border-bottom: 1px solid #f0f0f0;
@@ -38,6 +40,10 @@
         i:hover {
           color: #EB540A;
         }
+    }
+
+    #logo {
+      cursor: pointer;
     }
 
   }
