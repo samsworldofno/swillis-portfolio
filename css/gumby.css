@@ -1811,8 +1811,6 @@ body .video { width: 100%; position: relative; height: 0; padding-bottom: 56.25%
 
 .video > video, .video > iframe, .video > object, .video > embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
-.slide { height: 800px; }
-
 .navbar { background-color: white; border-bottom: 1px solid #f0f0f0; position: fixed; z-index: 9999; -webkit-transition: box-shadow .3s ease-out; -moz-transition: box-shadow .3s ease-out; -ms-transition: box-shadow .3s ease-out; -o-transition: box-shadow .3s ease-out; transition: box-shadow .3s ease-out; }
 .navbar #header h1 { font-family: arvo; font-size: 2em; margin-top: 5px; }
 .navbar #header #nav { text-align: right; }
