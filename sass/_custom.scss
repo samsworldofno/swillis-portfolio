@@ -1,7 +1,10 @@
 // Your custom SCSS should be written here...
 
+.container {
+/*  border-bottom: 40px solid whitesmoke;
+*/}
+
 .slide {
-  overflow: auto;
 }
 
 .navbar {
@@ -17,7 +20,7 @@
 
   #header {
     h1 {
-      font-family: arvo;
+      font-family: adelle;
       font-size: 2em;
       margin-top: 5px;
     }
@@ -38,7 +41,7 @@
           transition: .2s ease-out;
         }
         i:hover {
-          color: #EB540A;
+          color: #dedede;
         }
     }
 
@@ -54,21 +57,22 @@
 
   #articles {
     margin-top: 70px;
+    margin-bottom: 70px;
     .circle {
-      -webkit-border-radius: 100px;
-      -moz-border-radius: 100px;
-      -ms-border-radius: 100px;
-      -o-border-radius: 100px;
-      border-radius: 100px;
+      -webkit-border-radius: 150px;
+      -moz-border-radius: 150px;
+      -ms-border-radius: 150px;
+      -o-border-radius: 150px;
+      border-radius: 150px;
       background: black;
-      height: 200px;
-      width: 200px;
+      height: 250px;
+      width: 250px;
       margin: auto;
       color: white;
       cursor: pointer;
       margin-top: 20px;
         i {
-          padding-top: 0.8em;
+          padding-top: 1em;
         }
     }
 
@@ -128,7 +132,7 @@
 
 #feature {
   z-index: 1;
-  padding-top: 90px;
+  padding-top: 70px;
 }
 
 #articles {
@@ -175,12 +179,27 @@
     border-top: 1px dotted #f0f0f0;
   }
   li:hover {
-    background-color: #f0f0f0;
+    background-color: #e08157;
     color: white;
   }
   ul {
     margin-top: 80px;
     border-bottom: 1px dotted #f0f0f0;
+    margin-bottom: 80px;
+  }
+}
+
+#projects {
+  h1,h2,h3,h4 {
+  color: white;
+  }
+  p {
+    color: white;
+    opacity: 0.9;
+  }
+  a {
+    color: white;
+    color: inherit;
   }
 }
 
