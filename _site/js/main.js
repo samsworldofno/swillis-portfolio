@@ -20,7 +20,7 @@ $(function() {
 
 $(function()
       {
-        // $('.slide') .css({'height': (($(window).height()) )});
+        // // $('.slide') .css({'height': (($(window).height()) )});
     
         // $(window).bind('resize', function(){
         //     $('.slide') .css({'height': (($(window).height()) )});
@@ -36,4 +36,6 @@ $(function()
             }
         });
 
+        $('[data-typer-targets]').typer()
+        $.typer.options.highlightSpeed = 20;
 });
