@@ -1,7 +1,10 @@
 // Your custom SCSS should be written here...
 
+.container {
+/*  border-bottom: 40px solid whitesmoke;
+*/}
+
 .slide {
-  overflow: auto;
 }
 
 .navbar {
@@ -17,7 +20,7 @@
 
   #header {
     h1 {
-      font-family: arvo;
+      font-family: adelle;
       font-size: 2em;
       margin-top: 5px;
     }
@@ -37,38 +40,63 @@
           -o-transition: .2s ease-out;
           transition: .2s ease-out;
         }
-        i:hover {
-          color: #EB540A;
+
+        .icon-docs:hover {
+          color: #444444;
+        }
+
+        .icon-vcard:hover {
+          color: #444444;
+        }
+
+        .icon-paper-plane:hover {
+          color: #444444;
+        }
+
+        .icon-brush {
+          color: #eba22e;
+        }
+
+        .icon-pencil {
+          color: #d8612d;
+        }
+
+        .icon-tools {
+          color: #6ec1b1;
         }
     }
 
     #logo {
       cursor: pointer;
     }
-
   }
-
 }
 
 .home {
 
+  h4 {
+    opacity: 0.8;
+    text-shadow: 0px 1px 1px white;
+  }
+
   #articles {
     margin-top: 70px;
+    margin-bottom: 130px;
     .circle {
-      -webkit-border-radius: 100px;
-      -moz-border-radius: 100px;
-      -ms-border-radius: 100px;
-      -o-border-radius: 100px;
-      border-radius: 100px;
+      -webkit-border-radius: 150px;
+      -moz-border-radius: 150px;
+      -ms-border-radius: 150px;
+      -o-border-radius: 150px;
+      border-radius: 150px;
       background: black;
-      height: 200px;
-      width: 200px;
+      height: 250px;
+      width: 250px;
       margin: auto;
       color: white;
       cursor: pointer;
       margin-top: 20px;
         i {
-          padding-top: 0.8em;
+          padding-top: 1em;
         }
     }
 
@@ -102,6 +130,19 @@
     }
 
   }
+
+}
+
+.made {
+color: #eba22e;
+}
+
+.written {
+color: #d8612d;
+}
+
+.working {
+color: #6ec1b1;
 }
 
 .shaded {
@@ -128,7 +169,7 @@
 
 #feature {
   z-index: 1;
-  padding-top: 90px;
+  padding-top: 70px;
 }
 
 #articles {
@@ -160,27 +201,68 @@
 }
 
 #writing {
-  h3,h2 {
+  
+  h2 {
     color: white;
   }
-  p {
-    color: white;
-    opacity: 0.8;
+
+  h3, p {
+    color: black;
+    opacity: 0.5;
+    text-shadow: 0px 1px 1px #f3cfc0;
   }
+
+  h3:hover {
+    color: white;
+    opacity: 1;
+  }
+
   a {
     color: white;
     color: inherit;
   }
   li {
     border-top: 1px dotted #f0f0f0;
+    cursor: pointer;
   }
   li:hover {
-    background-color: #f0f0f0;
+    background-color: #e08157;
     color: white;
   }
   ul {
     margin-top: 80px;
     border-bottom: 1px dotted #f0f0f0;
+    margin-bottom: 80px;
+  }
+}
+
+#projects {
+  h1,h2,h3,h4 {
+  color: white;
+  }
+
+  i {
+    font-size: 10em;
+    padding: 0.4em 0em 0em 0.1em;
+    color: white;
+    opacity: 0.8;
+  }
+
+  p {
+    color: black;
+    opacity: 0.5;
+    text-shadow: 0px 1px 1px white;
+    margin-bottom: 70px;
+  }
+
+  a {
+  color: inherit;
+  border-bottom: 2px dotted white;
+  }
+
+  a:hover {
+    color: white;
+    tex-shadow: 0px 0px 0px white;
   }
 }
 
@@ -190,4 +272,64 @@
     border: 6px solid #f0f0f0;
     margin-bottom: 80px;
   }
+}
+
+#contact {
+
+  i {
+    font-size: 5em;
+    color: whitesmoke;
+    padding-top: 0.8em;
+  }
+
+  .buttons {
+
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+  }
+
+  .circle {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    -ms-border-radius: 150px;
+    -o-border-radius: 150px;
+    border-radius: 150px;
+    text-align: center;
+    margin: auto;
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    -ms-transition: .2s ease-out;
+    -o-transition: .2s ease-out;
+    transition: .2s ease-out;
+  }
+
+  .circle:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  .twitter {
+    background-color: #86bfd9;
+  }
+
+  .linkedin {
+    background-color: #6ec1b1;
+  }
+
+  .dribbble {
+    background-color: #d8612d;
+  }
+
+  .github {
+    background-color: #ea8e2d;
+  }
+
+  .email {
+    background-color: #f8cb4f;
+  }
+
 }
