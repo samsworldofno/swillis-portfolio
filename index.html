@@ -48,7 +48,7 @@
 
     <script type="text/javascript" src="//use.typekit.net/ckx2rmg.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
+    <script type="text/javascript" src='js/jquery.typer.js'></script>
     <script src="js/libs/modernizr-2.6.2.min.js"></script>
     <script type="text/javascript">
       function goToByScroll(id){
@@ -60,7 +60,7 @@
 <div class='navbar' id='nav1'>
   <div id='header' class='row'>
   <div id='logo' class='four columns' onClick="goToByScroll('first')">
-    <h1>Sam Willis</h1>
+    <h1><span class='the'>the</span><span class='sam'>sam</span><span class='willis'>willis</span></h1>
   </div>
   <a class="toggle" gumby-trigger="#nav #main-nav" href="#"><i class="icon-menu"></i></a>
   <div id='nav' class='three columns push_five'>
@@ -91,11 +91,9 @@
   <div class='home container'>
     <div class='first slide'>
       <div id='feature' class='row'>
-        <h2>I am a writer, a designer and a {padawan} hacker.</h2>
-        <p>I love communicating with people. I get to do this in many ways, from designing pretty things and writing great content, to telling stories over coffee and jokes over a beer.</p>
-
-        <p>For me, life is about sharing experiences and ideas with others, and I want my work to embody this.</p>
-        <h4>See what I'm working on.</h4>
+        <h1>Hi I'm Sam, I like to <span data-typer-targets="write., design., code., talk., make., hack."></span></h1>
+        <h4>I am a Community Manager by day, amatuer Web Designer by night.</h4>
+        <h4>Click on circles below to see what I've been <a href="" class='made'>making</a>, <a class='written' href="">writing</a> and <a class='working' href="">working on</a>.</h4>
       </div>
       <div id='articles' class='row'>
         <div class='four columns' onClick="goToByScroll('second')">
@@ -142,26 +140,27 @@
       <div id='projects' class='row fourth slide'>
         <h2>A few other projects I am working on.</h2>
         <div class='row'>
-        <div class='three columns circle image'><img src="img/me-and-jesper.png"></div>
+        <div class='three columns circle image'><img src="img/brewRaffleGreenUI.png"></div>
         <div class='nine columns'>
         <h4>Brew Raffle</h4>
-        <p>Visit Raffle.io if you need to solve tea-making problems. Brew Raffle helps you to deiced who makes the next round of tea. Enter the names of those wnating a tea, and Brew Raffle will amicably decide the brewer.</p>
-        <p><em>Remember:</em> You have to be in the raffle to be made a tea!</p>
+        <p>Visit <a href="">Brew Raffle</a> if you need to solve tea-making problems. Brew Raffle helps you to deiced who makes the next round of tea. Enter the names of those wnating a tea, and Brew Raffle will amicably decide the brewer.
+        </br></br>
+        <em>Remember:</em> You have to be in the raffle to be made a tea!</p>
         </div>
         </div>
         <div class='row'>
-        <div class='three columns circle image'><img src="img/me-and-jesper.png"></div>
         <div class='nine columns'>
         <h4>Chrome TV Project</h4>
-        <p>This project is currently on hold, but I am aiming to comlplete in the next month or so. It is a chrome extension that allows you to easily browse the free TV channels on BBC, ITV and Channel 4 on your laptop or home computer.</p>
+        <p class='lastProject'>This project is currently on hold, but I am aiming to comlplete in the next month or so. It is a chrome extension that allows you to easily browse the free TV channels on BBC, ITV and Channel 4 on your laptop or home computer.</p>
         </div>
+        <div class='three columns'><i class="icon-monitor"></i></div>
         </div>
         <div class='row'>
-        <div class='three columns circle image'><img src="img/me-and-jesper.png"></div>
+<!--         <div class='three columns circle image'><img src="img/me-and-jesper.png"></div>
         <div class='nine columns'>
         <h4>Secret List Project</h4>
         <p>This project is less secret, more in it's early stages and not ready for unveiling. I will post more on here once there is more to show.</p>
-        </div>
+        </div> -->
         </div>
       </div>
     </div>
@@ -169,7 +168,7 @@
       <div class='fifth slide'>
         <h2>About me.</h2>
         <div class='four columns push_four circle image bioPic'><img src="img/me-and-jesper.png"></div>
-        <div class='bioCopy twelve columns'
+        <div class='bioCopy twelve columns'>
         <p>I am a 23 year old Community Manager with a degree in Business. 12 months ago I have unearthed a passion for web design, and have been furiously learning and hacking away at projects ever since.</p>
         <p>I won't write a lot more here, as you probably won't read it. But, if you want to know more about me, visit some of the pages below. Or just pick up the phone.</p>
         <p>I am always looking for new projects, so if you think I can help you, don't hesitate to get in touch.</p>
@@ -182,10 +181,21 @@
         <h2>Contact me?</h2>
         <p>You can get hold of me via all of the usual channels, so holler if you need anything written, designed or hacked.</p>
         <p>If you just want a coffee or beer, then that's OK too.</p>
+        <div class='buttons'>
+        <div class='row'>
+          <div class='four columns'><div class='circle twitter'><i class="icon-twitter"></i></div></div>
+          <div class='four columns'><div class='circle linkedin'><i class="icon-linkedin"></i></div></div>
+          <div class='four columns'><div class='circle dribbble'><i class="icon-dribbble"></i></div></div>
+        </div>
+        <div class='row'>
+          <div class='four columns push_two'><div class='circle github'><i class="icon-github"></i></div></div>
+          <div class='four columns'><div class='circle email'><i class="icon-paper-plane"></i></div></div>
+        </div>
+        </div>
       </div>
     </div>
   </div>
-    <div id='footer' class='row'>
+<!--     <div id='footer' class='row'>
       <h2>Footer</h2>
       <ul class=''>
         <li>Twitter</li>
@@ -195,7 +205,7 @@
         <li>Github</li>
         <li>Whatever else</li>
       </ul>
-    </div>
+    </div> -->
   </div> <!--! end of #container -->
 
   <!-- JavaScript at the bottom for fast page loading -->

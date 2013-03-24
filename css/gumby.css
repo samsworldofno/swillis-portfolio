@@ -1819,16 +1819,28 @@ body .video { width: 100%; position: relative; height: 0; padding-bottom: 56.25%
 .navbar #header #nav { text-align: right; }
 .navbar #header #nav li { list-style: disc; }
 .navbar #header #nav i { font-size: 200%; text-shadow: none !important; color: #f0f0f0; -webkit-transition: .2s ease-out; -moz-transition: .2s ease-out; -ms-transition: .2s ease-out; -o-transition: .2s ease-out; transition: .2s ease-out; }
-.navbar #header #nav i:hover { color: #dedede; }
+.navbar #header #nav .icon-docs:hover { color: #444444; }
+.navbar #header #nav .icon-vcard:hover { color: #444444; }
+.navbar #header #nav .icon-paper-plane:hover { color: #444444; }
+.navbar #header #nav .icon-brush { color: #eba22e; }
+.navbar #header #nav .icon-pencil { color: #d8612d; }
+.navbar #header #nav .icon-tools { color: #6ec1b1; }
 .navbar #header #logo { cursor: pointer; }
 
-.home #articles { margin-top: 70px; margin-bottom: 70px; /*  .circleInner { -webkit-border-radius: 100px; -moz-border-radius: 100px; -ms-border-radius: 100px; -o-border-radius: 100px; border-radius: 100px; border: 3px solid black; height: 150px; width: 150px; margin: auto; }*/ }
+.home h4 { opacity: 0.8; text-shadow: 0px 1px 1px white; }
+.home #articles { margin-top: 70px; margin-bottom: 130px; /*  .circleInner { -webkit-border-radius: 100px; -moz-border-radius: 100px; -ms-border-radius: 100px; -o-border-radius: 100px; border-radius: 100px; border: 3px solid black; height: 150px; width: 150px; margin: auto; }*/ }
 .home #articles .circle { -webkit-border-radius: 150px; -moz-border-radius: 150px; -ms-border-radius: 150px; -o-border-radius: 150px; border-radius: 150px; background: black; height: 250px; width: 250px; margin: auto; color: white; cursor: pointer; margin-top: 20px; }
 .home #articles .circle i { padding-top: 1em; }
 .home #articles .circle:hover { opacity: 0.6; -webkit-transition: .2s ease-out; -moz-transition: .2s ease-out; -ms-transition: .2s ease-out; -o-transition: .2s ease-out; transition: .2s ease-out; }
 .home #articles .design { background-color: #eba22e; }
 .home #articles .writing { background-color: #d8612d; }
 .home #articles .projects { background-color: #6ec1b1; }
+
+.made { color: #eba22e; }
+
+.written { color: #d8612d; }
+
+.working { color: #6ec1b1; }
 
 .shaded { background-color: whitesmoke; }
 
@@ -1850,15 +1862,28 @@ body .video { width: 100%; position: relative; height: 0; padding-bottom: 56.25%
 #designs .nivoSlider img { position: absolute; top: 0px; left: 0px; display: none; }
 #designs .nivoSlider a { border: 0; display: block; }
 
-#writing h3, #writing h2 { color: white; }
-#writing p { color: white; opacity: 0.8; }
+#writing h2 { color: white; }
+#writing h3, #writing p { color: black; opacity: 0.5; text-shadow: 0px 1px 1px #f3cfc0; }
+#writing h3:hover { color: white; opacity: 1; }
 #writing a { color: white; color: inherit; }
-#writing li { border-top: 1px dotted #f0f0f0; }
+#writing li { border-top: 1px dotted #f0f0f0; cursor: pointer; }
 #writing li:hover { background-color: #e08157; color: white; }
 #writing ul { margin-top: 80px; border-bottom: 1px dotted #f0f0f0; margin-bottom: 80px; }
 
 #projects h1, #projects h2, #projects h3, #projects h4 { color: white; }
-#projects p { color: white; opacity: 0.9; }
-#projects a { color: white; color: inherit; }
+#projects i { font-size: 10em; padding: 0.4em 0em 0em 0.1em; color: white; opacity: 0.8; }
+#projects p { color: black; opacity: 0.5; text-shadow: 0px 1px 1px white; margin-bottom: 70px; }
+#projects a { color: inherit; border-bottom: 2px dotted white; }
+#projects a:hover { color: white; tex-shadow: 0px 0px 0px white; }
 
 .bio .bioPic { text-align: center; border: 6px solid #f0f0f0; margin-bottom: 80px; }
+
+#contact i { font-size: 5em; color: whitesmoke; padding-top: 0.8em; }
+#contact .buttons { margin-top: 70px; margin-bottom: 70px; }
+#contact .circle { width: 150px; height: 150px; background-color: black; -webkit-border-radius: 150px; -moz-border-radius: 150px; -ms-border-radius: 150px; -o-border-radius: 150px; border-radius: 150px; text-align: center; margin: auto; -webkit-transition: .2s ease-out; -moz-transition: .2s ease-out; -ms-transition: .2s ease-out; -o-transition: .2s ease-out; transition: .2s ease-out; }
+#contact .circle:hover { opacity: 0.8; cursor: pointer; }
+#contact .twitter { background-color: #86bfd9; }
+#contact .linkedin { background-color: #6ec1b1; }
+#contact .dribbble { background-color: #d8612d; }
+#contact .github { background-color: #ea8e2d; }
+#contact .email { background-color: #f8cb4f; }

@@ -35,4 +35,7 @@ $(function()
                 $(".navbar").removeClass("navbarShadow");
             }
         });
+
+        $('[data-typer-targets]').typer()
+        $.typer.options.highlightSpeed = 20;
 });
