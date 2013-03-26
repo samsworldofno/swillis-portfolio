@@ -1,10 +1,7 @@
 // Your custom SCSS should be written here...
 
-.container {
-/*  border-bottom: 40px solid whitesmoke;
-*/}
-
-.slide {
+h2 {
+  margin-top: 20px;
 }
 
 .navbar {
@@ -26,7 +23,7 @@
     }
 
     #nav {
-      text-align: right;
+      text-align: center;
         li {
           list-style: disc;
         }
@@ -42,15 +39,15 @@
         }
 
         .icon-docs:hover {
-          color: #444444;
+          color: #e0e0e0;
         }
 
         .icon-vcard:hover {
-          color: #444444;
+          color: #e0e0e0;
         }
 
         .icon-paper-plane:hover {
-          color: #444444;
+          color: #e0e0e0;
         }
 
         .icon-brush {
@@ -68,6 +65,22 @@
 
     #logo {
       cursor: pointer;
+
+      #logoImg {
+      margin-top: 12px;
+      margin-bottom: 13px;
+      display: block;
+      height: 35px;
+      width: 90px;
+      background: url('../img/navLogoOff.png');
+      background-repeat: no-repeat;
+      }
+
+      #logoImg:hover {
+      background: url('../img/navLogoOn.png');
+      background-repeat: no-repeat;
+      }
+
     }
   }
 }
@@ -80,8 +93,8 @@
   }
 
   #articles {
-    margin-top: 70px;
-    margin-bottom: 130px;
+    margin-top: 5em;
+    margin-bottom: 10em;
     .circle {
       -webkit-border-radius: 150px;
       -moz-border-radius: 150px;
@@ -241,6 +254,10 @@ color: #6ec1b1;
   color: white;
   }
 
+/*  .three {
+    height: 190px;
+  }*/
+
   i {
     font-size: 10em;
     padding: 0.4em 0em 0em 0.1em;
@@ -267,11 +284,22 @@ color: #6ec1b1;
 }
 
 .bio {
+
+   p {
+    text-shadow: 0px 1px 1px white;
+  }
+
   .bioPic {
     text-align: center;
     border: 6px solid #f0f0f0;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
+    max-width: 300px;
   }
+
+  .bioCopy {
+    margin-bottom: 70px;
+  }
+
 }
 
 #contact {
@@ -305,6 +333,7 @@ color: #6ec1b1;
     -ms-transition: .2s ease-out;
     -o-transition: .2s ease-out;
     transition: .2s ease-out;
+    margin-bottom: 20px;
   }
 
   .circle:hover {
