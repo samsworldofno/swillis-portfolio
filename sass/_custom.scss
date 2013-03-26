@@ -1,10 +1,7 @@
 // Your custom SCSS should be written here...
 
-.container {
-/*  border-bottom: 40px solid whitesmoke;
-*/}
-
-.slide {
+h2 {
+  margin-top: 20px;
 }
 
 .navbar {
@@ -42,15 +39,15 @@
         }
 
         .icon-docs:hover {
-          color: #444444;
+          color: #e0e0e0;
         }
 
         .icon-vcard:hover {
-          color: #444444;
+          color: #e0e0e0;
         }
 
         .icon-paper-plane:hover {
-          color: #444444;
+          color: #e0e0e0;
         }
 
         .icon-brush {
@@ -68,6 +65,22 @@
 
     #logo {
       cursor: pointer;
+
+      #logoImg {
+      margin-top: 12px;
+      margin-bottom: 13px;
+      display: block;
+      height: 35px;
+      width: 90px;
+      background: url('../img/navLogoOff.png');
+      background-repeat: no-repeat;
+      }
+
+      #logoImg:hover {
+      background: url('../img/navLogoOn.png');
+      background-repeat: no-repeat;
+      }
+
     }
   }
 }
@@ -80,8 +93,8 @@
   }
 
   #articles {
-    margin-top: 70px;
-    margin-bottom: 130px;
+    margin-top: 5em;
+    margin-bottom: 10em;
     .circle {
       -webkit-border-radius: 150px;
       -moz-border-radius: 150px;
