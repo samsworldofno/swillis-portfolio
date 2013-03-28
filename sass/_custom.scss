@@ -74,6 +74,11 @@ h2 {
       width: 90px;
       background: url('../img/navLogoOff.png');
       background-repeat: no-repeat;
+      -webkit-transition: .2s ease-out;
+      -moz-transition: .2s ease-out;
+      -ms-transition: .2s ease-out;
+      -o-transition: .2s ease-out;
+      transition: .2s ease-out;
       }
 
       #logoImg:hover {
@@ -148,14 +153,27 @@ h2 {
 
 .made {
 color: #eba22e;
+cursor: pointer;
 }
 
 .written {
 color: #d8612d;
+cursor: pointer;
 }
 
 .working {
 color: #6ec1b1;
+cursor: pointer;
+}
+
+.made:hover, .written:hover, .working:hover {
+  opacity: 0.8;
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  -ms-transition: .2s ease-out;
+  -o-transition: .2s ease-out;
+  transition: .2s ease-out;
+  border-bottom: 2px dotted;
 }
 
 .shaded {

@@ -237,10 +237,10 @@
       -o-transition: .2s ease-out;
       transition: .2s ease-out;
   		&:hover {
-  			color: #444444;
+  			color: #e0e0e0;
   		}
   		&:active, &.active {
-  			background: #444444;
+  			background: #e0e0e0;
         color: white;
   		}
   	}
